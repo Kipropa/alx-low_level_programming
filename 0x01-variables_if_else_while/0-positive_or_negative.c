@@ -15,7 +15,7 @@ int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
-switch (n < 0 ? -1 : (n > 0 ? 1 : 0)) 
+switch (n < 0 ? -1 : (n > 0 ? 1 : 0))
 {
 case -1:
 printf("%i is negative\n", n);
