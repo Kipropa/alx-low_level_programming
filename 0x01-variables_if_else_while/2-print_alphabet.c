@@ -5,10 +5,9 @@
  *
  * Return 0-Success
  */
-
 int main(void)
+/*program that prints the alphabet in lowercase, followed by a new line*/
 {
-	/*program that prints the alphabet in lowercase, followed by a new line*/
 	char letter;
 
 	letter = 'a';
@@ -19,6 +18,6 @@ int main(void)
 	}
 
 	putchar('\n');
-
+	/*program that prints the alphabet in lowercase, followed by a new line*/
 	return (0);
 }
