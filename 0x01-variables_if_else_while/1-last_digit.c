@@ -1,24 +1,34 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 
-/*betty style*/
+/**
+ * main - only function handling the last digit of a random number
+ *
+ * Return: 0 is success
+ */
+
 int main(void)
 {
-    int n;
+	int n;
+	int last;
 
-    srand(time(0));
-    n = rand() - RAND_MAX / 2;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	last = n % 10;
 
-    int last_digit = abs(n) % 10;
-
-    printf("Last digit of %d is ", n);
-    if (last_digit > 5)
-        printf("%d and is greater than 5\n", last_digit);
-    else if (last_digit == 0)
-        printf("0 and is 0\n");
-    else
-        printf("%d and is less than 6 and not 0\n", last_digit);
-
-    return (0);
+	if (last > 5)
+	{
+		printf("Last digit of %i is %i and is greater than 5\n", n, last);
+	}
+	else if (last < 6 && last != 0)
+	{
+		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, last);
+	}
+	else if (last == 0)
+	{
+		printf("Last digit of %i is %i and is 0\n", n, last);
+	}
+	return (0);
 }
+
