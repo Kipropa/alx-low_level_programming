@@ -5,8 +5,12 @@
  *
  * Return 0-Success
  */
+
+
+
+
 int main(void)
-/*program that prints the alphabet in lowercase, followed by a new line*/
+/*main program code that prints the alphabet in lowercase, followed by a new line*/
 {
 	char letter;
 
