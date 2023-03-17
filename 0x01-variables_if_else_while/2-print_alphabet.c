@@ -1,24 +1,20 @@
 #include <stdio.h>
 
+
 /**
- *main - Entry point
+ *main - prints a to z using putchar function
  *
- *Return 0-Success
+ *Return: 0 is success
  */
 
 int main(void)
-/*main program code that prints the alphabet in lowercase, followed by a new line*/
 {
-	char letter;
+	char c;
 
-	letter = 'a';
-	while (letter <= 'z')
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		putchar(letter);
-		letter++;
+		putchar(c);
 	}
-
 	putchar('\n');
-	/*program that prints the alphabet in lowercase, followed by a new line*/
 	return (0);
 }
