@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
-*_isnumber checks for a digit from 0-9
-*c is the input character
-*if its a digit, return 1 , otherwise, 0.
-*/
-int _isnumber(int c)
+ * _isdigit - checks for a digit (0 through 9).
+ * @c: input character
+ * Return: 1 if c is a digit and 0 otherwise
+ */
+
+int _isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
 	{
