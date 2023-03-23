@@ -6,7 +6,7 @@
  * the program returns the product of a  and b 
  */
 
-int (int a, int b)
+int mul(int a, int b)
 {
 return (a * b);
 }
